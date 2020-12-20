@@ -73,9 +73,12 @@ def view_post(post_id):
         row = cursor.fetchone()
         if row != None:
             post_id = row[0]
-            upvotes = get_votes(post_id, 1)
-            downvotes = get_votes(post_id, -1)
-            return render_template('showpost.html', content=row[1], nr=post_id, upvotes=upvotes, downvotes=downvotes)
+            good = get_votes(post_id, 1)
+            plusgood = get_votes(post_id, 2)
+            doubleplusgood = get_votes(post_id, 3)
+            doubleplusungood = get_votes(post_id, -2)
+            ungood = get_votes(post_id, -1)
+            return render_template('showpost.html', content=row[1], nr=post_id, good=good, plusgood=plusgood, ungood=ungood, doubleplusgood=doubleplusgood, doubleplusungood=doubleplusungood)
     return "Post could not be found", 404
 
 @app.route('/vote')
