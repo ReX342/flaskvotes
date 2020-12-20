@@ -14,6 +14,8 @@
 
 
 <script>
+let ಠ_ಠ = "stringofzo"
+console.log(ಠ_ಠ)
 function vote(post_id, rating) {
     fetch('/vote?' + new URLSearchParams({post_id:post_id, rating:rating})).then(function (resp) {
         if (resp.status == 200) {
