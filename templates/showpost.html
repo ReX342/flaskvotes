@@ -6,8 +6,12 @@
 <p style="text-decoration: underline;">
     {{ content }}
 </p>
+<button onclick="vote({{nr}}, 'doubleplusgood')">👍👍👍</button>
+<button onclick="vote({{nr}}, 'plusgood')">👍👍</button>
 <button onclick="vote({{nr}}, 'good')">👍</button>
-<button onclick="vote({{nr}}, 'bad')">👎</button>
+<button onclick="vote({{nr}}, 'ungood')">👎</button>
+<button onclick="vote({{nr}}, 'doubleplusungood')">👎👎</button>
+
 
 <script>
 function vote(post_id, rating) {

@@ -90,8 +90,14 @@ def vote():
 
     if rating == 'good':
         rating = 1
-    elif rating == 'bad':
+    elif rating == 'ungood':
         rating = -1
+    elif rating == 'doubleplusgood':
+        rating = 3
+    elif rating == 'plusgood':
+        rating = 2
+    elif rating == 'doubleplusungood':
+        rating = -2
     else:
         return "Invalid score provided", 400
 
