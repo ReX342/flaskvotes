@@ -1,4 +1,3 @@
-Disclaimer: Below no longer applies; went from -1 and 1 to from -2 up to and including 3
 
 To do: work on AVG instead of SUM sql
 
@@ -13,6 +12,7 @@ Here is a naive way to track votes and a proposed solution.
 
 When a user votes we increment or decrement the score counter based upon
 our user either upvoting(+1) or downvoting(-1).
+(This had been changed in this version: {-2, -1, 1, 2, 3})
 
 Imagine our user _Steve_ wants to cast a vote, how are we going to verify
 that _Steve_ hasn't already voted? The solution to this is to track for
