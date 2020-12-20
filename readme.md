@@ -1,3 +1,6 @@
+Disclaimer: Below no longer applies; went from -1 and 1 to from -2 up to and including 3
+
+To do: work on AVG instead of SUM sql
 
 # Tracking votes on content
 
